@@ -5,11 +5,11 @@
     <title>India Map</title>
  
     <!--  Scripts  -->
-    <script type="text/javascript" src="d3.min.js"></script>
-    <script type="text/javascript" src="d3.geo.min.js"></script>
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/d3.geo.min.js"></script>
  
     <!--  Styles  -->  
-    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
     <style type="text/css">
     svg {
       background: #eee;
@@ -38,8 +38,7 @@
              .append("svg:svg")
              .attr("width", w)
         .attr("height", h)
-//        .call(d3.behavior.zoom().on("zoom", redraw))
-        .call(initialize);;
+        .call(initialize);
 
     var map = svg.append("svg:g")
         
@@ -49,7 +48,7 @@
 
     
 
-    d3.json("full_data-1.json", function (json) {
+    d3.json("data/full_data-1.json", function (json) {
       india.selectAll("path")
           .data(json.features)
         .enter().append("path")
