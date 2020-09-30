@@ -4,7 +4,7 @@ India-map-D3
 India map of district level using D3.js
 
 In the data folder we have full_data-1.json file which contains the coordinates of the state and the districts of the
-india. Using that data and using D3.js ( "http://d3js.org/" ) we can able to plot the map having all the districts. On 
+India. Using that data and using D3.js ( "http://d3js.org/" ) we can able to plot the map having all the districts. On 
 hovering it will give the district name and the state corresponding to that district.
 
 
